@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <link rel="stylesheet" href="./style/styles.css">
+  <title>login dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- <div class="container">
+        <div class="wrapper">
+            <ul class="indicator">
+                <li  ><i class="ph-book-open"></i> <h1>AAVAS</h1></li>
+                <li class="active" data-target="home"><i class="ph-house"></i>home</li>
+                <li data-target="customer">  <i class="ph-users"></i>customer</li>
+                <li data-target="check status"><i class="ph-chart-line"></i>check status</li>
+                <li data-target="password"><i class="ph-password"></i>password</li>
+                <li data-target="help"><i class="ph-info"></i>help</li>
+                <li data-target="about us"><i class="ph-identification-card"></i>about us</li>
+                <li data-target="sign out"><i class="ph-sign-out"></i>sign out</li>
+            </ul> -->
+  <!-- <h2> <i class="ph-book-open"></i> AAVAS</h2> -->
+  <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white sidebar">
+    <div class="tab position-sticky">
+      <div class="list-group list-group-flush mx-3 mt-4">
+        <h2 class="h2"> <i class="ph-book-open ms-2"></i> AAVAS</h2>
+        <button class="tablinks" onclick="openCity(event, 'home')" id="defaultOpen"><i class="ph-house mx-2"
+            style="color: aliceblue;"></i>home</button>
+        <button class="tablinks" onclick="openCity(event, 'customer')"><i class="ph-users mx-2"></i>customer</button>
+        <button class="tablinks" onclick="openCity(event, 'check status')"><i class="ph-chart-line mx-2"></i>check
+          status</button>
+        <button class="tablinks" onclick="openCity(event, 'password')"><i class="ph-key mx-2"></i>password</button>
+        <button class="tablinks" onclick="openCity(event, 'help')"><i class="ph-info mx-2"></i>help</button>
+        <button class="tablinks" onclick="openCity(event, 'about us')"><i class="ph-identification-card mx-2"></i>about
+          us</button>
+        <button class="tablinks" onclick="openCity(event, 'signout')"><i class="ph-sign-out mx-2"></i>sign out</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- home -->
+
+  <div id="home" class="tabcontent">
+    <img src="./images/home.jpg" alt="home" width="100%" height="40%">
+    <br>
+    <br>
+
+
+    <h3>our home loan products</h3>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <img src="./images/home-loan-icon.png" alt="home loan" width="50%" height="50%">
+          <br>
+          home loan
+        </div>
+        <div class="col">
+          <img src="./images/construction-Loan.png" alt="home construction loan" width="50%" height="50%">
+          <br>
+          home construction loan
+        </div>
+        <div class="col">
+          <img src="./images/home-loan-icon.png" alt="finance for purchase" width="50%" height="50%">
+          <br>
+          MSME business loan
+        </div>
+        <div class="col">
+          <img src="./images/loan-against-property-icon.png" alt="loan against property" width="50%" height="50%">
+          <br>
+          loan against property
+        </div>
+        <div class="col">
+          <img src="./images/home-improvement-loan-icon.png" alt="fhome improvement loan" width="50%" height="50%">
+          <br>
+          home improvement loan
+        </div>
+      </div>
+      <br>
+
+
+      <div class="row">
+        <div class="col">
+          <h3>Download Aavas Loan App</h3>
+          <br>
+          <p>Aavas Loan Mobile App offers wide range of services related to home loans. Aavas Loan app is quick, easy
+            and convenient to use. The app offers a wide range of services for existing as well as prospective
+            customers.</p>
+          <ul>
+            <li>Apply for Loan</li>
+            <li>Get Loan details & outstanding details</li>
+            <li>Download Interest & provisional certificates</li>
+            <li>Apply for Partial Disbursement</li>
+            <li><button type="button"><a
+                  href="https://play.google.com/store/apps/details?id=com.aavas.homeloan">download now</a> </button>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <img src="./images/hand-phone.png" alt="download app">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- customer  -->
+
+  <div id="customer" class="tabcontent text-center">
+    <img src="./images/customer.jpg" alt="customer" width="100%" height="40%">
+
+    <h1 class="text-center mt-4">customer</h1>
+    <form>
+      <!-- <label for="loanid"><h5>loan id</h5> </label><br> -->
+      <input class="mt-4" type="number" id="loanid" placeholder="Enter your loan id" required><br>
+
+      <input class="btn btn-primary btn-block mb-4 mt-4" type="submit" value="search"
+        style="background-color: #253758;">
+    </form>
+
+  </div>
+
+  <!-- check status -->
+  <div id="check status" class="tabcontent">
+    <img src="./images/check status.jpg" alt="check status" width="100%" height="40%">
+    <h1 class="text-center mt-4">check status</h1>
+  </div>
+
+
+
+  <!-- password -->
+  <div id="password" class="tabcontent">
+    <img src="./images/password.jpg" alt="password" width="100%" height="40%">
+    <h1 class="text-center mt-4">Forgot Password</h1>
+
+    <div class="container text-center">
+      <button type="button" class="btn btn-primary btn-block mb-4 mt-4" style="background-color: #253758;" id="myOtp">
+        Click hear
+      </button>
+
+    </div>
+  </div>
+
+  <!-- password  -->
+
+
+
+  <!-- help  -->
+
+  <div id="help" class="tabcontent">
+    <img src="./images/help.jpg" alt="help" width="100%" height="40%">
+    
+
+    <div class="help text-center">
+      <form action="/action_page.php" class="text-center">
+        <h1 class="text-center mt-4">I Can Help You</h1>
+        
+        <input class="mt-4" type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <br>
+       
+        <input class="mt-4" type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <br>
+
+       
+        <textarea class="mt-4" id="subject" name="subject" placeholder="Write something.."
+          style="width: 200px;"></textarea>
+        <br>
+        <div class="text-center">
+          <input class="btn btn-primary btn-block mb-4 mt-4" style="background-color: #253758;" type="submit"
+            value="Submit" required>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+  <!-- about us  -->
+  <div id="about us" class="tabcontent">
+    <img src="./images/about.jpg" alt="about us" width="100%" height="40%">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+          <br>
+          <h2>About Us</h2>
+
+          <br>
+          <p> <i style="color:blue;">AAVAS FINANCIERS LIMITED</i> (Formerly known as “Au HOUSING FINANCE LIMITED”) was
+            originally incorporated as a private limited company at Jaipur, Rajasthan, under the name of "Au Housing
+            Finance Private Limited" on February 23,2011.</p>
+        </div>
+        <div class="col">
+          <br>
+          <br>
+          <br>
+
+          <img src="./images/awards.jpg" alt="about aavas">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>2011</h3>
+          <p>Company got registered with National Housing Bank as a Housing Finance Company (HFC) and awarded the
+            license from National Housing Bank (NHB) in August 2011.
+
+            It formally started its operations in March, 2012.</p>
+        </div>
+        <div class="col">
+          <h3>2013</h3>
+          <p>Subsequently, the name of the Company was changed to "Au Housing Finance Limited" due to conversion from
+            a
+            private company to a public company on January 10, 2013.</p>
+        </div>
+        <div class="col">
+          <h3>2017</h3>
+          <p>In March, 2017, the name of the company was changed from “Au HOUSING FINANCE LIMITED" to "AAVAS
+            FINANCIERS
+            LIMITED” (AAVAS) vide fresh Certificate of Incorporation (COI) dated 29th March, 2017.</p>
+        </div>
+      </div>
+      <p>AAVAS is engaged in the business of providing housing loans, primarily in the un-served, unreached and
+        under-served market which include the States of Rajasthan, Maharashtra, Gujarat, Madhya Pradesh, Haryana,
+        Uttar
+        Pradesh, Chhattisgarh, Uttarakhand, Punjab, Himachal Pradesh, Delhi, Odisha and Karnataka.</p>
+
+      <h3>Products</h3>
+      <p>AAVAS is engaged in 3 types of products mentioned below under its housing finance business:-</p>
+
+      <!-- <div> -->
+      <!-- <div class="row">
+                                        <div class="col">
+                                          <img src="/images/financeAndServices.jpg" alt="finance for purchase" width="10%" height="10%">
+                                          <div class="col">
+                                            <img src="/images/financeAndServices.jpg" alt="finance for purchase" width="10%" height="10%">
+                                          </div>
+                                          <div class="col">
+                                            <img src="/images/financeAndServices.jpg" alt="finance for purchase" width="10%" height="10%">
+                                          </div>
+                                        </div> -->
+      <!-- </div> -->
+      <br>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+
+        <img src="./images/home-loan-icon.png" alt="finance for purchase" width="20%" height="20%">
+        <h3>Finance for Purchase</h3>
+        <p>The product is designed to purchase individual dwelling units, flats in low cost buildings, detached and
+          semi-detached units, cluster units, and residential units. This is also applicable for properties under
+          construction or ready built property.
+        </p>
+      </div>
+      <div class="col">
+
+        <img src="./images/construction-Loan.png" alt="finance for purchase" width="20%" height="20%">
+        <!-- <i class="ph-wall"></i> -->
+        <h3>Finance for Construction</h3>
+        <p>The product is designed to offer loans for construction on a plot of land, which has been already acquired.
+        </p>
+      </div>
+      <div class="col">
+        <img src="./images/home-improvement-loan-icon.png" alt="finance for purchase" width="20%" height="20%">
+        <!-- <i class="ph-shopping-cart"></i> -->
+
+        <h3>Finance for Home Extension</h3>
+        <p>This product is designed to offer loans to individuals for extension of an existing home unit, which can
+          include construction of additional rooms, floors etc.</p>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <p>AAVAS also launched "Special Urban Low Income Housing Product" and "Specific Women Ownership Product" in
+          line
+          with NHB's refinance scheme for the Special Urban Housing Refinance Scheme for Low Income Households and
+          Refinance Scheme for Women.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Log Out sessicon -->
+  <div id="signout" class="tabcontent text-center">
+    <img src="./images/log.jpg" alt="customer" width="100%" height="40%">
+    <h1 class="text-center mt-4">Sign Out</h1>
+    <div class="container text-center">
+      <button type="submit" class="btn btn-primary btn-block mb-4 mt-4" style="background-color: #253758;" id="logout"
+        onclick="log()">
+        Click hear
+      </button>
+    </div>
+
+  </div>
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./script/script.js"></script>
+<script>
+  document.getElementById("myOtp").onclick = function () {
+    location.href = "index-forgot_email_form.html";
+  };
+
+</script>
+
+</html>
